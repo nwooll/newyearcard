@@ -117,6 +117,7 @@
     </head>
     
     <body>
+        <div id="container">
         <section id="display3"> 
         <section id="display">
             <section id="display2">
@@ -131,8 +132,131 @@
                 </section>
             </section>
             </section>
+        </div>
         
         
+        <script>
+        
+            var bg = document.getElementById("display3");
+            var nian = document.getElementById("nian");
+            var container = document.getElementById("container");
+            
+            nian.addEventListener("click", function(){
+           console.log("Nian Clicked")
+           
+          document.body.removeChild(container);
+                
+            var lockdiv = document.createElement("img");
+                
+                  lockdiv.setAttribute("id", "gallery");
+                    lockdiv.style.width = "1285px";
+                    lockdiv.style.height = "727px";
+                    lockdiv.style.left = "0";
+                    lockdiv.style.top = "10";
+                lockdiv.style.right = "0";
+                lockdiv.style.left = "0";
+                lockdiv.style.margin = "auto";
+                lockdiv.style.overflow = "hidden";
+                    lockdiv.style.position = "absolute";
+               
+           lockdiv.src = "5.jpg";
+              
+                    document.body.appendChild(lockdiv); 
+                
+                
+//create img element
+                
+                var btn1 = document.createElement("img");
+           
+                btn1.setAttribute("id", "next");
+                btn1.src = "uparrow.png";
+                btn1.style.Width= "30px";
+             btn1.style.height= "30px";
+                  btn1.style.position= "absolute";
+              btn1.style.margin= "10px";
+             btn1.style.borderRadius= "50%";
+             btn1.style.border= "5px solid rgba(255,255,255,0.5)";
+     btn1.style.boxShadow= "0px 0px 15px #363333";
+     document.body.appendChild(btn1);
+
+//create img element
+                   var btn2 = document.createElement("img");
+                
+             btn2.setAttribute("id", "back");
+                btn2.src = "downarrow.png";
+                btn2.style.Width= "30px";
+             btn2.style.height= "30px";
+                  btn2.style.position= "relative";
+              btn2.style.margin= "10px";
+                btn2.style.top="60px";
+             btn2.style.borderRadius= "50%";
+             btn2.style.border= "5px solid rgba(255,255,255,0.5)";
+     btn2.style.boxShadow= "0px 0px 15px #363333";
+     document.body.appendChild(btn2);
+    
+    
+                
+                
+                var image = new Array(3)
+image[1]="1.jpg"
+image[2]="2.png"
+image[3]="3.jpg"
+image[4]="4.jpg"
+image[5]="5.jpg"
+
+var num = 1;
+
+document.getElementById('next').addEventListener('click', function(galleryNext){
+num=num+1
+if (num==6)
+{num=1}
+document.getElementById('gallery').src=image[num];
+});
+
+document.getElementById('back').addEventListener('click', function(galleryPrevious){
+num=num-1
+if (num==0)
+{num=5}
+document.getElementById('gallery').src=image[num];
+});
+                
+                
+                var btn3 = document.createElement("img");
+                bclick=0;
+                
+                btn3.setAttribute("id", "back");
+                btn3.src = "close.png";
+                btn3.style.Width= "30px";
+             btn3.style.height= "30px";
+                  btn3.style.position= "relative";
+              btn3.style.margin= "10px";
+                btn3.style.top="100px";
+             btn3.style.borderRadius= "50%";
+             btn3.style.border= "5px solid rgba(255,255,255,0.5)";
+                
+     btn3.style.boxShadow= "0px 0px 15px #363333";
+     document.body.appendChild(btn3);
+                
+                btn3.addEventListener("click", function(){
+                console.log("button clicked");
+                    
+                          bclick++;
+                          if(bclick == 1){
+                          document.body.removeChild(lockdiv);
+                            document.body.removeChild(btn1);  document.body.removeChild(btn2);
+                        document.body.removeChild(btn3);
+                              
+    document.body.appendChild(container);
+                          }
+                    
+                });
+                
+            });
+            
+             
+                
+        
+        </script>
        
     </body>
     

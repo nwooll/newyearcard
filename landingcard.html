@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A00987471 - Greeting Card </title>
+    
+    <style>
+        
+        #display {
+            position: absolute;
+            width: 1285px;
+            height: 727px;
+            background-image: url(lant2.svg);
+                animation:200s scroll infinite linear;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+         #display2 {
+            position: absolute;
+            width: 1285px;
+            height: 727px;
+            background-image: url(lant1.svg);
+             background-repeat: repeat;
+                animation:150s scroll infinite linear;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+         #display3 {
+            position: absolute;
+            width: 1285px;
+            height: 727px;
+            background-color: #EDC994;
+             background-repeat: repeat;
+                animation:150s scroll infinite linear;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin: auto;
+            overflow: hidden;
+              z-index: 1;
+        }
+        
+        #chinatown{
+            position:absolute;
+            width: 1377px;
+            height: auto;
+            top: -39px;
+            left: -23px;
+        }
+        
+        #nian{
+           height: auto;
+           width: 290px;
+            position: absolute;
+           bottom:-8px;
+            left: 5px;
+            transition:1s;
+        }
+        
+        #banner{
+            height: auto;
+           width: 340px;
+            position:absolute;
+              bottom:195px;
+            left: 30px;
+             transition:1s;
+        }
+        
+        #cart1{
+            height: auto;
+           width: 70px;
+            position:absolute;
+              bottom:120px;
+            left: 530px;
+             transition:1s; 
+        }
+        
+    @keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+        
+    #nian:hover {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+
+  }
+        
+        
+#banner:hover {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+
+  }
+        
+        #cart1:hover {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+
+  }
+     
+        
+        /* flip style*/
+        
+        .card {
+    -webkit-perspective: 1200px; /* so you get the 3d effect */
+    position: absolute;
+            width: 1285px;
+            height: 727px;
+            background-color: #EDC994;
+             background-repeat: repeat;
+                animation:150s scroll infinite linear;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin: auto;
+            overflow: hidden;
+}
+
+.tile {
+    width: 1285px;
+            height: 727px;
+    position: absolute;
+}
+
+.card .front {
+    -webkit-transition-duration: 0.75s;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform-style: preserve-3d; /* otherwise the perspective gets erased, and you lose the 3d */
+    z-index: 2; /* the front needs to be rendered on top of the back */
+}
+
+.card .front .outside,
+.card .front .inside {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* makes it so that the elements only have a front side */
+}
+
+.card .front .outside {
+    background:red; 
+}
+
+.card .front .inside {
+     background: yellow;
+    -webkit-transform: rotateX(180deg); /* flips the top-inside so its back touches the fronts back */
+}
+
+
+
+.card.open .front {
+    -webkit-transform: rotateX(180deg); /*rotates the entire front (with the in- and outsides in it) if the class 'open' is added to the card */
+}
+    </style>
+
+    </head>
+    
+    <body>
+        
+       <div class="card" id="card">
+    <div class="tile front">
+        <div class="tile outside"></div>
+        <div class="tile inside"><p>Word inside</p></div>
+    </div>
+    <div class="tile">
+        
+        <section id="display3"> 
+        <section id="display">
+            <section id="display2">
+               
+         <img src="background.svg" id="chinatown">
+         <div id="nian"><img src="nian.svg" ></div> 
+            <div id="banner"><img src="banners.svg"></div>
+            <div id="lant1"></div>
+            <div id="lant2"></div>
+                
+                <div id="cart1"><img src="cart1.svg" ></div>
+                </section>
+            </section>
+            </section>
+           
+           </div>
+</div>
+ 
+        
+     
+        
+
+
+       
+        
+       
+        <script>
+    
+          document.getElementsByid("card").addEventListener("click", function(){
+        document.getElementsByid("card").style.toggleClass('open');
+});
+
+
+</script>   
+        
+    </body>
+    
+</html>
