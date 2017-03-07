@@ -1,0 +1,234 @@
+/*fonts*/
+
+@font-face {
+    font-family: tiger;
+    src: url("MING.ttf");
+}
+
+p{
+    font-family: tiger;
+}
+/*fonts end*/
+
+
+
+#display {
+            position: absolute;
+            width: 1285px;
+            height: 727px;
+            background-image: url(lant2.svg);
+                animation:200s scroll infinite linear;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+         #display2 {
+            position: absolute;
+            width: 1285px;
+            height: 727px;
+            background-image: url(lant1.svg);
+             background-repeat: repeat;
+                animation:150s scroll infinite linear;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+         #display3 {
+            position: absolute;
+            width: 1285px;
+            height: 727px;
+             background-image: url("sky2.svg");
+            background-repeat: repeat;
+            animation:150s scroll infinite linear;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin: auto;
+            overflow: hidden;
+             transition: 1s;
+        }
+        
+        #chinatown{
+            position:absolute;
+            width: 1377px;
+            height: auto;
+            top: -39px;
+            left: -23px;
+        }
+        
+        #nian{
+           height: auto;
+           width: 290px;
+            position: absolute;
+           bottom:-8px;
+            left: 5px;
+            transition:1s;
+        }
+        
+        #banner{
+            height: auto;
+           width: 340px;
+            position:absolute;
+              bottom:195px;
+            left: 30px;
+             transition:1s;
+             animation:oscill 1s ease-in-out infinite alternate; 
+        }
+        
+        #cart1{
+            height: auto;
+           width: 70px;
+            position:absolute;
+              bottom:120px;
+            left: 530px;
+             transition:1s; 
+        }
+        
+        #window {
+            position: absolute;
+            width:41px;
+            right:327px;
+            top:164px;
+            transition: 1s;
+        }
+        
+#txtbox {
+    transition: 1s;
+    font-size:24pt;
+}
+        
+    /*Garden door*/ 
+        .cards {}
+
+.card-toggle {
+  display: none;
+}
+
+.card {
+    transform: rotate(1deg);
+  display: block;
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  -webkit-perspective: 700;
+    right: 10px;
+    bottom: 77px;
+  
+  cursor: pointer;
+}
+
+.card:hover .face {
+  -webkit-transition: all 1s ease-out;
+}
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+    overflow: hidden;
+  width:  50px;
+  height: 70px;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: all 0.5s ease-out;
+  -webkit-transform-origin: 0 0;
+}
+
+.front {
+  -webkit-transform: rotateY(-20deg);
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+}
+
+.inner-left {
+  -webkit-transform: rotateY(-20deg);
+  z-index: 2;
+}
+
+.inner-left > img {
+  -webkit-transform: rotateY(180deg);
+}
+
+.inner-right {
+  -webkit-transform: rotateY(0deg);
+  z-index: 1;
+}
+
+.card:hover .front,
+.card:hover .inner-left {
+  -webkit-transform: rotateY(-35deg);
+}
+
+.card-toggle:checked + .card .front,
+.card-toggle:checked + .card .inner-left {
+  -webkit-transform: rotateY(-165deg);
+}
+
+.card-toggle:checked + .card .inner-right {
+  -webkit-transform: rotateY(-15deg);
+}
+        
+          /*end garden door*/
+       
+        
+        /*animations*/
+        
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+        
+#quizmaster{
+    
+    width: 347px;
+  height: 851px;
+  background: url('spritesheet-03.png') left center;
+    animation: play .9s steps(4) infinite;
+
+
+}
+
+@keyframes play {
+   100% { background-position: -1422px; }
+}
+     
+        /*animations end */
+        
+        /*hover states */
+        
+    #nian:hover {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+
+  }
+        
+        
+#banner:hover {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+
+  }
+        
+        #cart1:hover {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+
+  }
+   
+    
+#txtbox:hover {
+    
+      -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); 
+}
+        
+        

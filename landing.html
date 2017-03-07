@@ -4,115 +4,8 @@
     <meta charset="utf-8">
     <title>A00987471 - Greeting Card </title>
     
-    <style>
-        
-        #display {
-            position: absolute;
-            width: 1285px;
-            height: 727px;
-            background-image: url(lant2.svg);
-                animation:200s scroll infinite linear;
-            top:0;
-            left:0;
-            right:0;
-            bottom:0;
-            margin: auto;
-            overflow: hidden;
-        }
-        
-         #display2 {
-            position: absolute;
-            width: 1285px;
-            height: 727px;
-            background-image: url(lant1.svg);
-             background-repeat: repeat;
-                animation:150s scroll infinite linear;
-            top:0;
-            left:0;
-            right:0;
-            bottom:0;
-            margin: auto;
-            overflow: hidden;
-        }
-        
-         #display3 {
-            position: absolute;
-            width: 1285px;
-            height: 727px;
-            background-color: #EDC994;
-             background-repeat: repeat;
-                animation:150s scroll infinite linear;
-            top:0;
-            left:0;
-            right:0;
-            bottom:0;
-            margin: auto;
-            overflow: hidden;
-        }
-        
-        #chinatown{
-            position:absolute;
-            width: 1377px;
-            height: auto;
-            top: -39px;
-            left: -23px;
-        }
-        
-        #nian{
-           height: auto;
-           width: 290px;
-            position: absolute;
-           bottom:-8px;
-            left: 5px;
-            transition:1s;
-        }
-        
-        #banner{
-            height: auto;
-           width: 340px;
-            position:absolute;
-              bottom:195px;
-            left: 30px;
-             transition:1s;
-        }
-        
-        #cart1{
-            height: auto;
-           width: 70px;
-            position:absolute;
-              bottom:120px;
-            left: 530px;
-             transition:1s; 
-        }
-        
-     
-        
-@keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-        
-    #nian:hover {
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
-    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
-
-  }
-        
-        
-#banner:hover {
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
-    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
-
-  }
-        
-        #cart1:hover {
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
-    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
-
-  }
-        
-    </style>
+    <link rel="stylesheet" type="text/css" href="Neelam_Woolley_Midterm.css">
+  
 
     </head>
     
@@ -129,22 +22,1062 @@
             <div id="lant2"></div>
                 
                 <div id="cart1"><img src="cart1.svg" ></div>
+                <div><img src="window.svg" id="window"></div>
+                
+                <div class='cards'>
+  <input type="checkbox" id="card-toggle-1" class="card-toggle" value="selected">
+  <label class='card' for="card-toggle-1">
+    <div class='front face'>
+      <img src='door.svg'/>
+    </div>
+    <div class="inner-left face">
+      <img src='door2.svg' />
+    </div>
+    <div class="inner-right face">
+      <img src='opendoor.svg' id="door" />
+    </div>
+  </label>
+
+  <audio id="aud"></audio>
+                    
+</div>
                 </section>
             </section>
             </section>
         </div>
         
         
-        <script>
         
+        
+        <script>
+            
+         var msrc1 = "1.mp3";
+            var msrc2 = "3.mp3";
+            var msrc3 = "click.mp3";
+            var day = false;
+            var door= document.getElementById("door");
+            
+         var wind = document.getElementById("window");   
             var bg = document.getElementById("display3");
             var nian = document.getElementById("nian");
             var container = document.getElementById("container");
             
+            
+            
+            
+            //Quiz start
+            
+            
+            door.addEventListener("click", function(){
+                console.log("Door Clicked");
+                
+                
+                
+                 aud.setAttribute("id", "aud");
+                    aud.src= msrc2;
+                    aud.play();
+                
+                var qdiv = document.createElement("div");
+               
+                qdiv.style.width = "1285px";
+                qdiv.style.height = "727px";
+                qdiv.style.left = "0";
+                    qdiv.style.top = "0";
+                qdiv.style.right = "0";
+                qdiv.style.left = "0";
+                qdiv.style.margin = "auto";
+               qdiv.style.overflow = "hidden";
+                    qdiv.style.position = "absolute";
+                    qdiv.style.backgroundColor = "rgba(226, 73, 16, 0)";
+                    bg.appendChild(qdiv);
+                
+             
+                
+                var quiz = document.createElement("div");
+                
+                 quiz.setAttribute("id","txtbox");
+                quiz.style.width = "300px";
+                quiz.style.height = "auto";
+                 quiz.style.right = "300px";
+                    quiz.style.top = "100px";
+                quiz.style.borderRadius ="25px";
+                    quiz.style.position = "absolute";
+                    quiz.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(quiz); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Welcome to the garden. Have you gained enough knowledge to enter?");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    quiz.appendChild(para);
+                
+                var no = document.createElement("div");
+                bclick=0;
+                 no.setAttribute("id","txtbox");
+                no.style.width = "100px";
+                no.style.height = "auto";
+                 no.style.right = "300px";
+                   no.style.top = "500px";
+                no.style.borderRadius ="25px";
+                    no.style.position = "absolute";
+                    no.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(no); 
+                
+                var para = document.createElement("P");
+    var t2 = document.createTextNode("No");
+                para.style.textAlign ="center";
+    para.appendChild(t2);
+    no.appendChild(para);
+                 
+                    no.addEventListener("click", function(){
+                console.log("no button clicked");
+                    
+                        aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                        
+                          bclick++;
+                          if(bclick == 1){
+                          bg.removeChild(qdiv);
+                            
+                          }
+                    
+                });
+                
+                 var yes = document.createElement("div");
+                bclick=0;
+                 yes.setAttribute("id","txtbox");
+                yes.style.width = "100px";
+                yes.style.height = "auto";
+                 yes.style.right = "500px";
+                   yes.style.top = "500px";
+                yes.style.borderRadius ="25px";
+                    yes.style.position = "absolute";
+                    yes.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(yes); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("Yes");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    yes.appendChild(para);
+                 
+                    yes.addEventListener("click", function(){
+                console.log("yes button clicked");
+                    
+                            aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                        
+                          qdiv.removeChild(quiz);
+                              qdiv.removeChild(no);
+                              qdiv.removeChild(yes); 
+                        
+                            
+                               var quiz2 = document.createElement("div");
+                
+                 quiz2.setAttribute("id","txtbox");
+                quiz2.style.width = "300px";
+                quiz2.style.height = "auto";
+                 quiz2.style.right = "300px";
+                    quiz2.style.top = "100px";
+                quiz2.style.borderRadius ="25px";
+                    quiz2.style.position = "absolute";
+                    quiz2.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(quiz2); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Hmph. We shall see how prepared you truely are.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    quiz2.appendChild(para);
+                            
+                             
+                                 
+                                 var back = document.createElement("div");
+                
+                 back.setAttribute("id","txtbox");
+                back.style.width = "100px";
+                back.style.height = "auto";
+                 back.style.right = "500px";
+                   back.style.top = "500px";
+                back.style.borderRadius ="25px";
+                    back.style.position = "absolute";
+                    back.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(back); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("Leave");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    back.appendChild(para); 
+                              
+                                 back.addEventListener("click",function(){
+                                       aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                     bg.removeChild(qdiv);
+                                 
+                             }); 
+                              
+                                 var cont = document.createElement("div");
+                
+                 cont.setAttribute("id","txtbox");
+                cont.style.width = "100px";
+                cont.style.height = "auto";
+                 cont.style.right = "300px";
+                  cont.style.top = "500px";
+                cont.style.borderRadius ="25px";
+                    cont.style.position = "absolute";
+                    cont.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(cont); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("cont");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    cont.appendChild(para); 
+                              
+                                 cont.addEventListener("click",function(){
+                                     
+                                     console.log("cont button clicked");
+                                     
+                                        aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                    
+                                     qdiv.removeChild(quiz2);
+                              qdiv.removeChild(back);
+                              qdiv.removeChild(cont);
+                              
+                                     
+                              var quiz3 = document.createElement("div");
+                                     
+                
+                           //question 1         
+                 quiz3.setAttribute("id","txtbox");
+                quiz3.style.width = "300px";
+                quiz3.style.height = "auto";
+                 quiz3.style.right = "300px";
+                    quiz3.style.top = "100px";
+                quiz3.style.borderRadius ="25px";
+                    quiz3.style.position = "absolute";
+                    quiz3.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(quiz3); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("In ancient China firecrackers were made by filling bamboo stems with gunpowder.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    quiz3.appendChild(para);
+                          
+                    
+                var tru = document.createElement("div");
+                                     
+                
+                 tru.setAttribute("id","txtbox");
+                tru.style.width = "100px";
+                tru.style.height = "auto";
+                 tru.style.right = "500px";
+                   tru.style.top = "500px";
+                tru.style.borderRadius ="25px";
+                    tru.style.position = "absolute";
+                    tru.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(tru); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("True");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    tru.appendChild(para); 
+                              
+                                 tru.addEventListener("click",function(){
+                                     console.log("true clicked");
+                                       aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                      qdiv.removeChild(quiz3);
+                              qdiv.removeChild(tru);
+                              qdiv.removeChild(fal);
+                                 
+                                     
+                                     
+                                      //question 2.1 
+                                     var quiz5 = document.createElement("div");
+                                     
+                 quiz5.setAttribute("id","txtbox");
+                quiz5.style.width = "300px";
+                quiz5.style.height = "auto";
+                 quiz5.style.right = "300px";
+                    quiz5.style.top = "100px";
+                quiz5.style.borderRadius ="25px";
+                    quiz5.style.position = "absolute";
+                    quiz5.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(quiz5); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Shopping for the perfect plum tree is not dissimilar to the Western tradition of buying a Christmas tree.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    quiz5.appendChild(para);
+                          
+                    
+                var tru3 = document.createElement("div");
+                                     
+                
+                 tru3.setAttribute("id","txtbox");
+                tru3.style.width = "100px";
+                tru3.style.height = "auto";
+                 tru3.style.right = "500px";
+                   tru3.style.top = "500px";
+                tru3.style.borderRadius ="25px";
+                    tru3.style.position = "absolute";
+                    tru3.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(tru3); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("True");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    tru3.appendChild(para); 
+                              
+                                 tru3.addEventListener("click",function(){
+                                     console.log("true 2.1 clicked");
+                                      
+                                     
+                                       aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                     
+                                     qdiv.removeChild(quiz5);
+                                     qdiv.removeChild(fal3);
+                                     qdiv.removeChild(tru3);
+                                     
+                                     //win screen   
+                                     var won = document.createElement("div");
+won.setAttribute("id","txtbox");
+               won.style.width = "300px";
+                won.style.height = "auto";
+                 won.style.right = "300px";
+                    won.style.top = "100px";
+                won.style.borderRadius ="25px";
+                    won.style.position = "absolute";
+                    won.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(won); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Very well! you may enter.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    won.appendChild(para);
+                          
+var enter = document.createElement("div");
+                                     
+                
+                enter.setAttribute("id","txtbox");
+                enter.style.width = "100px";
+                enter.style.height = "auto";
+                 enter.style.right = "500px";
+                   enter.style.top = "500px";
+                enter.style.borderRadius ="25px";
+                    enter.style.position = "absolute";
+                    enter.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(enter); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("Enter");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    enter.appendChild(para); 
+                                  
+                                     enter.addEventListener("click",function(){
+                                     
+                                     bg.removeChild(qdiv);
+                                 
+                                         
+                                           aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                         
+                                         
+                                         //garden add bg image + onclick function
+                                         var garden = document.createElement("div");
+               
+                garden.style.width = "1285px";
+                garden.style.height = "727px";
+                garden.style.left = "0";
+                    garden.style.top = "0";
+                garden.style.right = "0";
+                garden.style.left = "0";
+                garden.style.margin = "auto";
+               garden.style.overflow = "hidden";
+                    garden.style.position = "absolute";
+                    garden.style.backgroundColor = "rgba(27, 204, 48, 0.54)";
+                    bg.appendChild(garden);
+                                 
+                                         
+                                         //garden end
+                             }); 
+                               // win screen end 
+});
+ var fal3 = document.createElement("div");
+                                     
+                
+                 fal3.setAttribute("id","txtbox");
+                fal3.style.width = "100px";
+                fal3.style.height = "auto";
+                 fal3.style.right = "300px";
+                   fal3.style.top = "500px";
+                fal3.style.borderRadius ="25px";
+                    fal3.style.position = "absolute";
+                    fal3.style.backgroundColor = "rgb(255, 255, 255)";
+qdiv.appendChild(fal3); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("False");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    fal3.appendChild(para); 
+                              
+                                 fal3.addEventListener("click",function(){
+                                     console.log("false 2.1 clicked");
+                                     
+                                        aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                     
+                                     qdiv.removeChild(quiz5);
+                                     qdiv.removeChild(fal3);
+                                     qdiv.removeChild(tru3);
+                                     
+                                    
+                                       //question 3.2 
+                                     var quiz6 = document.createElement("div");
+                                     
+                 quiz6.setAttribute("id","txtbox");
+                quiz6.style.width = "300px";
+                quiz6.style.height = "auto";
+                 quiz6.style.right = "300px";
+                    quiz6.style.top = "100px";
+                quiz6.style.borderRadius ="25px";
+                    quiz6.style.position = "absolute";
+                    quiz6.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(quiz6); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Traditionally, red envelopes or packets containing candy are exchanged during spring festival.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    quiz6.appendChild(para);
+                          
+                    
+                var tru4 = document.createElement("div");
+                                     
+                
+                 tru4.setAttribute("id","txtbox");
+                tru4.style.width = "100px";
+                tru4.style.height = "auto";
+                 tru4.style.right = "500px";
+                   tru4.style.top = "500px";
+                tru4.style.borderRadius ="25px";
+                    tru4.style.position = "absolute";
+                    tru4.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(tru4); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("True");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    tru4.appendChild(para); 
+                              
+                                 tru4.addEventListener("click",function(){
+                                     console.log("true 2.1 clicked");
+                                      
+                                       aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                     
+                                     qdiv.removeChild(quiz6);
+                                     qdiv.removeChild(fal4);
+                                     qdiv.removeChild(tru4);
+                                     
+                                     
+                                     
+                                     
+                                     //loser screen   
+                                     var lost = document.createElement("div");
+lost.setAttribute("id","txtbox");
+               lost.style.width = "300px";
+                lost.style.height = "auto";
+                 lost.style.right = "300px";
+                    lost.style.top = "100px";
+                lost.style.borderRadius ="25px";
+                    lost.style.position = "absolute";
+                    lost.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(lost); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Enough! Come back when you are ready.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    lost.appendChild(para);
+                          
+var loss = document.createElement("div");
+                                     
+                
+                 loss.setAttribute("id","txtbox");
+                loss.style.width = "100px";
+                loss.style.height = "auto";
+                 loss.style.right = "500px";
+                   loss.style.top = "500px";
+                loss.style.borderRadius ="25px";
+                    loss.style.position = "absolute";
+                    loss.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(loss); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("Leave");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    loss.appendChild(para); 
+                                  
+                                     loss.addEventListener("click",function(){
+                                     
+                                      aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();     
+                                         
+                                     bg.removeChild(qdiv);
+                                 
+                             }); 
+                               // lose screen end      
+                                     
+                                     
+});
+ var fal4 = document.createElement("div");
+                                     
+                
+                 fal4.setAttribute("id","txtbox");
+                fal4.style.width = "100px";
+                fal4.style.height = "auto";
+                 fal4.style.right = "300px";
+                   fal4.style.top = "500px";
+                fal4.style.borderRadius ="25px";
+                    fal4.style.position = "absolute";
+                    fal4.style.backgroundColor = "rgb(255, 255, 255)";
+qdiv.appendChild(fal4); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("False");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    fal4.appendChild(para); 
+                              
+                                 fal4.addEventListener("click",function(){
+                                     console.log("false 2.1 clicked");
+                                     
+                                       aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                     
+                                     qdiv.removeChild(quiz6);
+                                     qdiv.removeChild(fal4);
+                                     qdiv.removeChild(tru4);
+                                     
+                                     //win screen   
+                                     var won = document.createElement("div");
+won.setAttribute("id","txtbox");
+               won.style.width = "300px";
+                won.style.height = "auto";
+                 won.style.right = "300px";
+                    won.style.top = "100px";
+                won.style.borderRadius ="25px";
+                    won.style.position = "absolute";
+                    won.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(won); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Very well! you may enter.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    won.appendChild(para);
+                          
+var enter = document.createElement("div");
+                                     
+                
+                enter.setAttribute("id","txtbox");
+                enter.style.width = "100px";
+                enter.style.height = "auto";
+                 enter.style.right = "500px";
+                   enter.style.top = "500px";
+                enter.style.borderRadius ="25px";
+                    enter.style.position = "absolute";
+                    enter.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(enter); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("Enter");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    enter.appendChild(para); 
+                                  
+                                     enter.addEventListener("click",function(){
+                                     
+                                           aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                         
+                                     bg.removeChild(qdiv);
+                                 
+                                         var garden = document.createElement("div");
+               
+                garden.style.width = "1285px";
+                garden.style.height = "727px";
+                garden.style.left = "0";
+                    garden.style.top = "0";
+                garden.style.right = "0";
+                garden.style.left = "0";
+                garden.style.margin = "auto";
+               garden.style.overflow = "hidden";
+                    garden.style.position = "absolute";
+                    garden.style.backgroundColor = "rgba(27, 204, 48, 0.54)";
+                    bg.appendChild(garden);
+                                         
+                             }); 
+                               //{ win screen end
+                                 });
+                             }); 
+                             }); 
+                                     
+                                     
+                                      var fal = document.createElement("div");
+                                     
+                
+                 fal.setAttribute("id","txtbox");
+                fal.style.width = "100px";
+                fal.style.height = "auto";
+                 fal.style.right = "300px";
+                   fal.style.top = "500px";
+                fal.style.borderRadius ="25px";
+                    fal.style.position = "absolute";
+                    fal.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(fal); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("False");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    fal.appendChild(para); 
+                              
+                                 fal.addEventListener("click",function(){
+                                     
+                                     console.log("false clicked");
+                                     
+                                       aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                     
+                                      qdiv.removeChild(quiz3);
+                              qdiv.removeChild(tru);
+                              qdiv.removeChild(fal);
+                                 
+                                     
+                                     //question 2.2 
+                                     var quiz4 = document.createElement("div");
+                                    
+                 quiz4.setAttribute("id","txtbox");
+                quiz4.style.width = "300px";
+                quiz4.style.height = "auto";
+                 quiz4.style.right = "300px";
+                    quiz4.style.top = "100px";
+                quiz4.style.borderRadius ="25px";
+                    quiz4.style.position = "absolute";
+                    quiz4.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(quiz4); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Hongjun Laozu was slain by the great beast Nian on the same day as Spring festival.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    quiz4.appendChild(para);
+                          
+                    
+                var tru2 = document.createElement("div");
+                                     
+                
+                 tru2.setAttribute("id","txtbox");
+                tru2.style.width = "100px";
+                tru2.style.height = "auto";
+                 tru2.style.right = "500px";
+                   tru2.style.top = "500px";
+                tru2.style.borderRadius ="25px";
+                    tru2.style.position = "absolute";
+                    tru2.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(tru2); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("True");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    tru2.appendChild(para); 
+                              
+                                 tru2.addEventListener("click",function(){
+                                     console.log("true 2.2 clicked");
+                                      
+                                       aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                     
+                                     qdiv.removeChild(quiz4);
+                                     qdiv.removeChild(fal2);
+                                     qdiv.removeChild(tru2);
+                                  
+                             //loser screen 
+                                     var lost = document.createElement("div");
+lost.setAttribute("id","txtbox");
+               lost.style.width = "300px";
+                lost.style.height = "auto";
+                 lost.style.right = "300px";
+                    lost.style.top = "100px";
+                lost.style.borderRadius ="25px";
+                    lost.style.position = "absolute";
+                    lost.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(lost); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Enough! Come back when you are ready.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    lost.appendChild(para);
+                          
+                                    
+var loss = document.createElement("div");
+                                     
+                
+                 loss.setAttribute("id","txtbox");
+                loss.style.width = "100px";
+                loss.style.height = "auto";
+                 loss.style.right = "500px";
+                   loss.style.top = "500px";
+                loss.style.borderRadius ="25px";
+                    loss.style.position = "absolute";
+                    loss.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(loss); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("Leave");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    loss.appendChild(para); 
+                                  
+                                     loss.addEventListener("click",function(){
+                                     
+                                           aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                         
+                                     bg.removeChild(qdiv);
+                                 
+                             }); 
+                               // lose screen end      
+                                     
+                             }); 
+                                     
+                                     
+                                      var fal2 = document.createElement("div");
+                                     
+                
+                 fal2.setAttribute("id","txtbox");
+                fal2.style.width = "100px";
+                fal2.style.height = "auto";
+                 fal2.style.right = "300px";
+                   fal2.style.top = "500px";
+                fal2.style.borderRadius ="25px";
+                    fal2.style.position = "absolute";
+                    fal2.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(fal2); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("False");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    fal2.appendChild(para); 
+                              
+                                 fal2.addEventListener("click",function(){
+                                     console.log("false 2.2 clicked");
+                                    
+                                       aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                     
+                                     qdiv.removeChild(quiz4);
+                                     qdiv.removeChild(fal2);
+                                     qdiv.removeChild(tru2);
+                                     
+                                     
+                                     //question 3.2 
+                                     var quiz6 = document.createElement("div");
+                                     
+                 quiz6.setAttribute("id","txtbox");
+                quiz6.style.width = "300px";
+                quiz6.style.height = "auto";
+                 quiz6.style.right = "300px";
+                    quiz6.style.top = "100px";
+                quiz6.style.borderRadius ="25px";
+                    quiz6.style.position = "absolute";
+                    quiz6.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(quiz6); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Traditionally, red envelopes or packets containing candy are exchanged during spring festival.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    quiz6.appendChild(para);
+                          
+                    
+                var tru4 = document.createElement("div");
+                                     
+                
+                 tru4.setAttribute("id","txtbox");
+                tru4.style.width = "100px";
+                tru4.style.height = "auto";
+                 tru4.style.right = "500px";
+                   tru4.style.top = "500px";
+                tru4.style.borderRadius ="25px";
+                    tru4.style.position = "absolute";
+                    tru4.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(tru4); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("True");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    tru4.appendChild(para); 
+                              
+                                 tru4.addEventListener("click",function(){
+                                     console.log("true 2.1 clicked");
+                                      
+                                     
+                                       aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                     
+                                     
+                                     qdiv.removeChild(quiz6);
+                                     qdiv.removeChild(fal4);
+                                     qdiv.removeChild(tru4);
+                                     
+                                     //loser screen   
+                                     var lost = document.createElement("div");
+lost.setAttribute("id","txtbox");
+               lost.style.width = "300px";
+                lost.style.height = "auto";
+                 lost.style.right = "300px";
+                    lost.style.top = "100px";
+                lost.style.borderRadius ="25px";
+                    lost.style.position = "absolute";
+                    lost.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(lost); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Enough! Come back when you are ready.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    lost.appendChild(para);
+                          
+var loss = document.createElement("div");
+                                     
+                
+                 loss.setAttribute("id","txtbox");
+                loss.style.width = "100px";
+                loss.style.height = "auto";
+                 loss.style.right = "500px";
+                   loss.style.top = "500px";
+                loss.style.borderRadius ="25px";
+                    loss.style.position = "absolute";
+                    loss.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(loss); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("Leave");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    loss.appendChild(para); 
+                                  
+                                     loss.addEventListener("click",function(){
+                                     
+                                         
+                                      aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();     
+                                         
+                                     bg.removeChild(qdiv);
+                                 
+                             }); 
+                               // lose screen end      
+                                     
+                                     
+});
+ var fal4 = document.createElement("div");
+                                     
+                
+                 fal4.setAttribute("id","txtbox");
+                fal4.style.width = "100px";
+                fal4.style.height = "auto";
+                 fal4.style.right = "300px";
+                   fal4.style.top = "500px";
+                fal4.style.borderRadius ="25px";
+                    fal4.style.position = "absolute";
+                    fal4.style.backgroundColor = "rgb(255, 255, 255)";
+qdiv.appendChild(fal4); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("False");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    fal4.appendChild(para); 
+                              
+                                 fal4.addEventListener("click",function(){
+                                     console.log("false 2.1 clicked");
+                                     
+                                       aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                     
+                                     qdiv.removeChild(quiz6);
+                                     qdiv.removeChild(fal4);
+                                     qdiv.removeChild(tru4);
+                                     
+                                     //win screen   
+                                     var won = document.createElement("div");
+won.setAttribute("id","txtbox");
+               won.style.width = "300px";
+                won.style.height = "auto";
+                 won.style.right = "300px";
+                    won.style.top = "100px";
+                won.style.borderRadius ="25px";
+                    won.style.position = "absolute";
+                    won.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(won); 
+                
+                var para = document.createElement("P");
+    var t = document.createTextNode("Very well! you may enter.");
+                para.style.textAlign ="center";
+    para.appendChild(t);
+    won.appendChild(para);
+                          
+var enter = document.createElement("div");
+                                     
+                
+                enter.setAttribute("id","txtbox");
+                enter.style.width = "100px";
+                enter.style.height = "auto";
+                 enter.style.right = "500px";
+                   enter.style.top = "500px";
+                enter.style.borderRadius ="25px";
+                    enter.style.position = "absolute";
+                    enter.style.backgroundColor = "rgb(255, 255, 255)";
+                    qdiv.appendChild(enter); 
+                
+                var para = document.createElement("P");
+    var t3 = document.createTextNode("Enter");
+                para.style.textAlign ="center";
+    para.appendChild(t3);
+    enter.appendChild(para); 
+                                  
+                                     enter.addEventListener("click",function(){
+                                     
+                                           aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                                         
+                                     bg.removeChild(qdiv);
+                                 
+                                         var garden = document.createElement("div");
+               
+                garden.style.width = "1285px";
+                garden.style.height = "727px";
+                garden.style.left = "0";
+                    garden.style.top = "0";
+                garden.style.right = "0";
+                garden.style.left = "0";
+                garden.style.margin = "auto";
+               garden.style.overflow = "hidden";
+                    garden.style.position = "absolute";
+                    garden.style.backgroundColor = "rgba(27, 204, 48, 0.54)";
+                    bg.appendChild(garden);
+                                         
+                             }); 
+                               // win screen end 
+                                 
+                             }); 
+                                 
+                             }); 
+                                     
+                             }); 
+                                     
+                });
+                            
+                          
+                    
+                });
+                
+                
+                
+                
+                
+                //character sprite
+                
+                var quizm = document.createElement("div");
+                
+               quizm.setAttribute("id","quizmaster");
+              
+                    quizm.style.position = "absolute";
+                
+                quizm.style.right = "5px";
+                    
+                    qdiv.appendChild(quizm);
+                
+                   //character sprite end 
+               
+                
+            
+                
+            });
+            
+            //Quiz end
+            
+            //window clickfunction
+            
+             wind.addEventListener("click", function(){
+                if (day == false) {
+				console.log('clicked window');
+                    wind.src = "window2.svg";
+				bg.style.backgroundImage = "url(sky.svg)";
+                    
+				day = true;
+                    
+			}
+			else {
+                bg.style.backgroundImage = "url(sky2.svg)";
+                 wind.src = "window.svg";
+				day = false;
+			}
+                
+            });
+            
+            
+            //gallery 
+            
             nian.addEventListener("click", function(){
            console.log("Nian Clicked")
-           
-          document.body.removeChild(container);
+        
+          
+                
+                var aud = document.createElement("audio")
+                 aud.setAttribute("id", "aud");
+                    aud.src= msrc1;
+                    aud.play();
                 
             var lockdiv = document.createElement("img");
                 
@@ -152,7 +1085,7 @@
                     lockdiv.style.width = "1285px";
                     lockdiv.style.height = "727px";
                     lockdiv.style.left = "0";
-                    lockdiv.style.top = "10";
+                    lockdiv.style.top = "0";
                 lockdiv.style.right = "0";
                 lockdiv.style.left = "0";
                 lockdiv.style.margin = "auto";
@@ -161,10 +1094,10 @@
                
            lockdiv.src = "5.jpg";
               
-                    document.body.appendChild(lockdiv); 
+                    bg.appendChild(lockdiv); 
                 
                 
-//create img element
+// Gallery
                 
                 var btn1 = document.createElement("img");
            
@@ -197,7 +1130,7 @@
     
                 
                 
-                var image = new Array(3)
+                var image = new Array(5 )
 image[1]="1.jpg"
 image[2]="2.png"
 image[3]="3.jpg"
@@ -242,11 +1175,11 @@ document.getElementById('gallery').src=image[num];
                     
                           bclick++;
                           if(bclick == 1){
-                          document.body.removeChild(lockdiv);
+                          bg.removeChild(lockdiv);
                             document.body.removeChild(btn1);  document.body.removeChild(btn2);
                         document.body.removeChild(btn3);
                               
-    document.body.appendChild(container);
+    
                           }
                     
                 });

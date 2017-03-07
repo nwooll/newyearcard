@@ -1,0 +1,19 @@
+<svg id="Layer_67" data-name="Layer 67" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1367 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1367" y1="386" x2="0" y2="386" gradientTransform="matrix(1, 0, 0, -1, 0, 770)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#49241e"/>
+      <stop offset="0.06377" stop-color="#57301c"/>
+      <stop offset="0.18455" stop-color="#7c4e16"/>
+      <stop offset="0.34964" stop-color="#b8800c"/>
+      <stop offset="0.52212" stop-color="#feba00"/>
+      <stop offset="1" stop-color="#fe5100"/>
+    </linearGradient>
+  </defs>
+  <title>sky</title>
+  <rect class="cls-1" width="1367" height="768"/>
+</svg>

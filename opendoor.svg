@@ -1,0 +1,36 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 51.70917 71.51347">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="6.20754" y1="36.1102" x2="1.20717" y2="36.1102" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bc5044"/>
+      <stop offset="0.15916" stop-color="#b74e42"/>
+      <stop offset="0.35883" stop-color="#a7483d"/>
+      <stop offset="0.58018" stop-color="#8e3e35"/>
+      <stop offset="0.81545" stop-color="#6a3129"/>
+      <stop offset="1" stop-color="#49241e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="26.20717" y1="6.34669" x2="26.20717" y2="1.20704" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bc5044"/>
+      <stop offset="0.29456" stop-color="#903f36"/>
+      <stop offset="0.60195" stop-color="#6a3129"/>
+      <stop offset="0.848" stop-color="#522721"/>
+      <stop offset="1" stop-color="#49241e"/>
+    </linearGradient>
+  </defs>
+  <title>opendoor</title>
+  <polygon class="cls-1" points="1.207 1.207 6.208 6.207 6.208 71.013 1.207 71.012 1.207 1.207"/>
+  <polygon class="cls-2" points="51.207 1.207 51.187 6.347 6.208 6.207 1.207 1.207 51.207 1.207"/>
+</svg>
