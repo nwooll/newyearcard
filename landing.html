@@ -18,6 +18,7 @@
          <img src="background.svg" id="chinatown">
          <div id="nian"><img src="nian.svg" ></div> 
             <div id="banner"><img src="banners.svg" ></div>
+                <div id="citizen"><img src="civilian-01.svg"></div>
             <div id="lant1"></div>
             <div id="lant2"></div>
                 
@@ -57,13 +58,20 @@
             var day = false;
             var door= document.getElementById("door");
             
+            var lant1 = document.getElementById("display");
+            var lant2 = document.getElementById("display2");
+            var city = document.getElementById("chinatown");
+            
          var wind = document.getElementById("window");   
             var bg = document.getElementById("display3");
             var nian = document.getElementById("nian");
+            var citizen = document.getElementById("citizen");
+            var banner = document.getElementById("banner");
             var container = document.getElementById("container");
+            var cart = document.getElementById("cart1");
             
             
-            
+           
             
             //Quiz start
             
@@ -393,7 +401,7 @@ var enter = document.createElement("div");
                                      enter.addEventListener("click",function(){
                                      
                                      bg.removeChild(qdiv);
-                                 
+                                
                                          
                                            aud.setAttribute("id", "aud");
                     aud.src= msrc3;
@@ -401,20 +409,59 @@ var enter = document.createElement("div");
                                          
                                          
                                          //garden add bg image + onclick function
-                                         var garden = document.createElement("div");
+                                         var garden = document.createElement("img");
                
-                garden.style.width = "1285px";
-                garden.style.height = "727px";
-                garden.style.left = "0";
-                    garden.style.top = "0";
-                garden.style.right = "0";
-                garden.style.left = "0";
-                garden.style.margin = "auto";
-               garden.style.overflow = "hidden";
+                    garden.style.width = "1366px";
+                garden.style.height = "auto";
+                garden.style.bottom = "0";
                     garden.style.position = "absolute";
-                    garden.style.backgroundColor = "rgba(27, 204, 48, 0.54)";
+                    garden.src = "garden-03.svg";
                     bg.appendChild(garden);
                                  
+                                     city.src="close.png";
+                                           city.style.width ="50px";
+                                        city.style.height ="50px";
+                                         city.style.top="10px";
+                                         city.style.left="10px";
+                                         
+                                         
+                                          var close = document.createElement("img");
+                                         
+                                         close.src="close.png";
+                                         close.style.width ="50px";
+                                        close.style.height ="50px";
+                                         close.style.top="10px";
+                                     close.style.left="10px";
+                                         close.style.position = "absolute";
+                                         
+                                         bg.appendChild(close);
+                                         
+                                          close.addEventListener("click", function(){
+                                                                console.log("x click");
+                                                                
+                                              bg.removeChild(garden);
+                                               bg.removeChild(koi);
+                                              bg.removeChild(close);
+                                              city.src="background.svg";
+                                              
+              city.style.width= "1377px";
+              city.style.height= "auto";
+              city.style.top= "-39px";
+              city.style.left= "-23px";
+                                                                });
+                                         
+                                         //koi animation
+                                         
+                                          var koi = document.createElement("koi");
+                
+               koi.setAttribute("id","koi");
+              
+                   koi.style.position = "absolute";
+                
+               
+                    
+                    bg.appendChild(koi);
+                
                                          
                                          //garden end
                              }); 
@@ -629,19 +676,60 @@ var enter = document.createElement("div");
                                          
                                      bg.removeChild(qdiv);
                                  
-                                         var garden = document.createElement("div");
+                                         var garden = document.createElement("img");
                
-                garden.style.width = "1285px";
-                garden.style.height = "727px";
-                garden.style.left = "0";
-                    garden.style.top = "0";
-                garden.style.right = "0";
-                garden.style.left = "0";
-                garden.style.margin = "auto";
-               garden.style.overflow = "hidden";
+                    garden.style.width = "1366px";
+                garden.style.height = "auto";
+                
+                garden.style.bottom = "0";
                     garden.style.position = "absolute";
-                    garden.style.backgroundColor = "rgba(27, 204, 48, 0.54)";
+                    garden.src = "garden-03.svg";
                     bg.appendChild(garden);
+                                   
+                                          city.src="close.png";
+                                           city.style.width ="50px";
+                                        city.style.height ="50px";
+                                         city.style.top="10px";
+                                         city.style.left="10px";
+                                         
+                                         var close = document.createElement("img");
+                                         
+                                         close.src="close.png";
+                                         close.style.width ="50px";
+                                        close.style.height ="50px";
+                                         close.style.top="10px";
+                                     close.style.left="10px";
+                                        close.style.position = "absolute";
+                                         
+                                         
+                                         bg.appendChild(close);
+                                         
+                                          close.addEventListener("click", function(){
+                                                                console.log("x click");
+                                                                
+                                              bg.removeChild(garden);
+                                               bg.removeChild(koi);
+                                              bg.removeChild(close);
+                                              city.src="background.svg";
+                                              
+              city.style.width= "1377px";
+              city.style.height= "auto";
+              city.style.top= "-39px";
+              city.style.left= "-23px";
+                                                                });
+                                         
+                                   //koi animation
+                                         
+                                          var koi = document.createElement("koi");
+                
+               koi.setAttribute("id","koi");
+              
+                   koi.style.position = "absolute";
+                
+                
+                    
+                    bg.appendChild(koi);    
+                                     
                                          
                              }); 
                                //{ win screen end
@@ -993,20 +1081,61 @@ var enter = document.createElement("div");
                                          
                                      bg.removeChild(qdiv);
                                  
-                                         var garden = document.createElement("div");
+                                         var garden = document.createElement("img");
                
-                garden.style.width = "1285px";
-                garden.style.height = "727px";
-                garden.style.left = "0";
-                    garden.style.top = "0";
-                garden.style.right = "0";
-                garden.style.left = "0";
-                garden.style.margin = "auto";
-               garden.style.overflow = "hidden";
+                garden.style.width = "1366px";
+                garden.style.height = "auto";
+                garden.style.bottom = "0";  
                     garden.style.position = "absolute";
-                    garden.style.backgroundColor = "rgba(27, 204, 48, 0.54)";
+                    garden.src = "garden-03.svg";
                     bg.appendChild(garden);
                                          
+                                         
+                                   city.src="close.png";
+                                           city.style.width ="50px";
+                                        city.style.height ="50px";
+                                         city.style.top="10px";
+                                         city.style.left="10px";
+                                         
+                                         
+                                          var close = document.createElement("img");
+                                         
+                                         close.src="close.png";
+                                         close.style.width ="50px";
+                                        close.style.height ="50px";
+                                         close.style.top="10px";
+                                     close.style.left="10px";
+                                         close.style.position = "absolute";
+                                         bg.appendChild(close);
+                                         
+                                          close.addEventListener("click", function(){
+                                                                console.log("x click");
+                                                                
+                                              bg.removeChild(garden);
+                                               bg.removeChild(koi);
+                                              bg.removeChild(close);
+                                              city.src="background.svg";
+                                              
+              city.style.width= "1377px";
+              city.style.height= "auto";
+              city.style.top= "-39px";
+              city.style.left= "-23px";
+                                                                });
+                                         
+                                         
+                                         //koi animation
+                                         
+                                        
+                                         
+                                          var koi = document.createElement("koi");
+                
+               koi.setAttribute("id","koi");
+                koi.style.position = "absolute";
+                
+                bg.appendChild(koi);
+                
+                    
+                  
                              }); 
                                // win screen end 
                                  
@@ -1047,6 +1176,368 @@ var enter = document.createElement("div");
             
             //Quiz end
             
+            
+            //citizen clickfunction
+            
+            citizen.addEventListener("click", function(){
+               
+              
+                
+                
+                
+                var aud = document.createElement("audio")
+                 aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                
+                
+                
+            var ccoin = document.createElement("div");
+                
+                ccoin.setAttribute("id","coins");
+                ccoin.style.width ="514px";
+                ccoin.style.height = "181px";
+              ccoin.style.overflow = "hidden";
+                ccoin.style.position = "absolute";
+                ccoin.style.top ="200px";
+                ccoin.style.right ="200px";
+                ccoin.style.borderRadius = "20px";
+               
+                
+                bg.appendChild(ccoin);
+                
+                var coin = document.createElement("img");
+                
+                coin.src = "coins-04.svg";
+               
+                
+                ccoin.appendChild(coin);
+                
+               
+                
+	
+                
+                
+                ccoin.addEventListener("click", function(){
+                console.log("button clicked");
+                    
+                         var aud = document.createElement("audio")
+                 aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();    
+                          bg.removeChild(ccoin);
+                            
+                    
+                              
+    
+                    
+                });
+                 
+                
+            });
+            
+            
+            //cart clickfunction
+            
+            cart.addEventListener("click", function(){
+                
+               var aud = document.createElement("audio")
+                 aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                
+                var market = document.createElement("img");
+                
+                  
+                    market.style.width = "1285px";
+                    market.style.height = "727px";
+                    market.style.left = "0";
+                    market.style.top = "0";
+                market.style.right = "0";
+                market.style.left = "0";
+                market.style.margin = "auto";
+                market.style.overflow = "hidden";
+                   market.style.position = "absolute";
+               
+           market.src = "market-09.svg";
+              
+                    bg.appendChild(market); 
+                
+                
+                //plum click function
+                var plum = document.createElement("img");
+                
+                plum.src = "tree-09.svg";
+                plum.setAttribute("id","plum");
+                
+                bg.appendChild(plum);
+                
+                
+                plum.addEventListener("click",function(){
+                    
+                  var plumdiv = document.createElement("div");
+                
+               plumdiv.setAttribute("id","plumdiv");
+             plumdiv.style.width ="514px";
+                plumdiv.style.height = "181px";
+              plumdiv.style.overflow = "hidden";
+             plumdiv.style.position = "absolute";
+               plumdiv.style.top ="200px";
+                plumdiv.style.right ="200px";
+                plumdiv.style.borderRadius = "20px";
+               
+                
+                bg.appendChild(plumdiv);
+                
+                var pluminfo = document.createElement("img");
+                
+                pluminfo.src = "plum-12.svg";
+               
+                
+                plumdiv.appendChild(pluminfo);
+                
+               
+                
+	
+                
+                
+               plumdiv.addEventListener("click", function(){
+                console.log("button clicked");
+                    
+                         var aud = document.createElement("audio")
+                 aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();    
+                          bg.removeChild(plumdiv);
+                            
+                    
+                              
+    
+                    
+                });
+                
+                });plum
+                //fireworks click function
+                
+                
+                 var fworks = document.createElement("img");
+                
+                fworks.src = "fireworks-09.svg";
+                fworks.setAttribute("id","fireworks");
+                
+                bg.appendChild(fworks);
+                
+                fworks.addEventListener("click",function(){
+                    
+                  var fworksdiv = document.createElement("div");
+                
+                fworksdiv.setAttribute("id","fworksdiv");
+             fworksdiv.style.width ="514px";
+                fworksdiv.style.height = "181px";
+              fworksdiv.style.overflow = "hidden";
+              fworksdiv.style.position = "absolute";
+               fworksdiv.style.top ="200px";
+                fworksdiv.style.right ="200px";
+                fworksdiv.style.borderRadius = "20px";
+               
+                
+                bg.appendChild(fworksdiv);
+                
+                var fworksinfo = document.createElement("img");
+                
+                fworksinfo.src = "fireworks-13.svg";
+               
+                
+                fworksdiv.appendChild(fworksinfo);
+                
+               
+                
+	
+                
+                
+                fworksdiv.addEventListener("click", function(){
+                console.log("button clicked");
+                    
+                         var aud = document.createElement("audio")
+                 aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();    
+                          bg.removeChild(fworksdiv);
+                            
+                    
+                              
+    
+                    
+                });
+                
+                });
+                
+                //map click function
+                
+                var map = document.createElement("img");
+                
+                map.src = "map-09.svg";
+                map.setAttribute("id","map");
+                
+                bg.appendChild(map);
+                
+                
+//                map.addEventListener("click",function(){
+//                    
+//                  var mapdiv = document.createElement("div");
+//                
+//                mapdiv.setAttribute("id","mapdiv");
+//              mapdiv.style.width ="514px";
+//                mapdiv.style.height = "181px";
+//              mapdiv.style.overflow = "hidden";
+//              mapdiv.style.position = "absolute";
+//                mapdiv.style.top ="200px";
+//                mapdiv.style.right ="200px";
+//                mapdiv.style.borderRadius = "20px";
+//               
+//                
+//                bg.appendChild(mapdiv);
+//                
+//                var mapinfo = document.createElement("img");
+//                
+//                mapinfo.src = "";
+//               
+//                
+//                mapdiv.appendChild(mapinfo);
+//                
+//               
+//                
+//	
+//                
+//                
+//                mapdiv.addEventListener("click", function(){
+//                console.log("button clicked");
+//                    
+//                         var aud = document.createElement("audio")
+//                 aud.setAttribute("id", "aud");
+//                    aud.src= msrc3;
+//                    aud.play();    
+//                          bg.removeChild(mapdiv);
+//                            
+//                    
+//                              
+//    
+//                    
+//                });
+//                
+//                });
+                
+                
+                // fire cracker click function
+                var cracker = document.createElement("img");
+                
+                cracker.src = "cracker-14.svg";
+                cracker.setAttribute("id","cracker");
+                
+                bg.appendChild(cracker);
+                
+                cracker.addEventListener("click",function(){
+                  var crackdiv = document.createElement("div");
+                
+                crackdiv.setAttribute("id","crackdiv");
+                crackdiv.style.width ="514px";
+                crackdiv.style.height = "181px";
+              crackdiv.style.overflow = "hidden";
+               crackdiv.style.position = "absolute";
+                crackdiv.style.top ="200px";
+                crackdiv.style.right ="200px";
+                crackdiv.style.borderRadius = "20px";
+               
+                
+                bg.appendChild(crackdiv);
+                
+                var crackerinfo = document.createElement("img");
+                
+                crackerinfo.src = "crackerdiv-15.svg";
+               
+                
+                crackdiv.appendChild(crackerinfo);
+                
+               
+                
+	
+                
+                
+                crackdiv.addEventListener("click", function(){
+                console.log("button clicked");
+                    
+                         var aud = document.createElement("audio")
+                 aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();    
+                          bg.removeChild(crackdiv);
+                            
+                    
+                              
+    
+                    
+                });
+                
+                });
+            });
+            
+            
+            //Banner Clickfunction
+            
+            banner.addEventListener("click", function(){
+               
+                
+                
+                var aud = document.createElement("audio")
+                 aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();
+                
+                
+                
+            var cban = document.createElement("div");
+                
+                cban.setAttribute("id","coins");
+                cban.style.width ="514px";
+                cban.style.height = "181px";
+             cban.style.overflow = "hidden";
+                cban.style.position = "absolute";
+                cban.style.top ="200px";
+                cban.style.left ="200px";
+                cban.style.borderRadius = "20px";
+               
+                
+                bg.appendChild(cban);
+                
+                var rooster = document.createElement("img");
+                
+                rooster.src = "rooster-05.svg";
+               
+                
+                cban.appendChild(rooster);
+                
+               
+                
+	
+                
+                
+                cban.addEventListener("click", function(){
+                console.log("button clicked");
+                    
+                         var aud = document.createElement("audio")
+                 aud.setAttribute("id", "aud");
+                    aud.src= msrc3;
+                    aud.play();    
+                          bg.removeChild(cban);
+                            
+                    
+                              
+    
+                    
+                });
+                 
+                
+            });
             //window clickfunction
             
              wind.addEventListener("click", function(){
@@ -1130,7 +1621,7 @@ var enter = document.createElement("div");
     
                 
                 
-                var image = new Array(5 )
+                var image = new Array(5)
 image[1]="1.jpg"
 image[2]="2.png"
 image[3]="3.jpg"
