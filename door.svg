@@ -15,7 +15,7 @@
         fill: url(#linear-gradient-3);
       }
     </style>
-    <linearGradient id="linear-gradient" x1="0.5" y1="35.4026" x2="50.5" y2="35.4026" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" x1="-86.3464" y1="-255.80018" x2="-36.3464" y2="-255.80018" gradientTransform="matrix(1, 0, 0, -1, 86.8464, -220.39758)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#bc5044"/>
       <stop offset="0.15916" stop-color="#b74e42"/>
       <stop offset="0.35883" stop-color="#a7483d"/>
@@ -23,13 +23,13 @@
       <stop offset="0.81545" stop-color="#6a3129"/>
       <stop offset="1" stop-color="#49241e"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="5.104" y1="35.01318" x2="45.10352" y2="35.01318" gradientTransform="translate(-9.90942 60.11694) rotate(-90)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient-2" x1="-81.34629" y1="-255.80037" x2="-41.34678" y2="-255.80037" gradientTransform="matrix(1, 0, 0, -1, 86.8464, -220.39758)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#bc5044"/>
       <stop offset="0.40586" stop-color="#883c33"/>
       <stop offset="0.80134" stop-color="#5a2b24"/>
       <stop offset="1" stop-color="#49241e"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-3" x1="41.8961" y1="39.13961" x2="46.8961" y2="39.13961" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient-3" x1="-44.9503" y1="-259.53719" x2="-39.9503" y2="-259.53719" gradientTransform="matrix(1, 0, 0, -1, 86.8464, -220.39758)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#bc5044"/>
       <stop offset="0.41022" stop-color="#db8538"/>
       <stop offset="0.8028" stop-color="#f5b32e"/>
@@ -37,7 +37,9 @@
     </linearGradient>
   </defs>
   <title>door</title>
-  <rect class="cls-1" x="0.5" y="0.5" width="50" height="69.80519"/>
-  <rect class="cls-2" x="-4.79907" y="15.01343" width="59.80566" height="39.99951" transform="translate(60.51305 10.29903) rotate(90)"/>
-  <circle class="cls-3" cx="44.3961" cy="39.13961" r="2.5"/>
+  <g>
+    <rect class="cls-1" x="0.5" y="0.5" width="50" height="69.80519"/>
+    <rect class="cls-2" x="5.50011" y="5.49996" width="39.99951" height="59.80566"/>
+    <circle class="cls-3" cx="44.3961" cy="39.13961" r="2.5"/>
+  </g>
 </svg>
