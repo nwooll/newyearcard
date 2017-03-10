@@ -2328,7 +2328,7 @@ console.log(winner);
                 lockdiv.style.overflow = "hidden";
                     lockdiv.style.position = "absolute";
                
-           lockdiv.src = "5.jpg";
+           lockdiv.src = "1.jpg";
               
                     bg.appendChild(lockdiv); 
                 
@@ -2366,18 +2366,19 @@ console.log(winner);
     
                 
                 
-                var image = new Array(5)
-image[1]="1.jpg"
-image[2]="2.png"
-image[3]="3.jpg"
-image[4]="4.jpg"
-image[5]="5.jpg"
+                var image = new Array(6)
+image[1]="6.jpg"
+image[2]="1.jpg"
+image[3]="2.jpg"
+image[4]="3.jpg"
+image[5]="4.jpg"
+image[6]="5.jpg"
 
 var num = 1;
 
 document.getElementById('next').addEventListener('click', function(galleryNext){
 num=num+1
-if (num==6)
+if (num==7)
 {num=1}
 document.getElementById('gallery').src=image[num];
 });

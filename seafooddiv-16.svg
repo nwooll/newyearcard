@@ -64,7 +64,7 @@
       }
 
       .cls-15 {
-        font-size: 14px;
+        font-size: 17px;
         font-family: Ming, Ming;
       }
 
@@ -73,23 +73,23 @@
       }
 
       .cls-17 {
-        letter-spacing: -0.00698em;
+        letter-spacing: -0.00701em;
       }
 
       .cls-18 {
-        letter-spacing: -0.006em;
+        letter-spacing: -0.00597em;
       }
 
       .cls-19 {
-        letter-spacing: -0.01004em;
+        letter-spacing: -0.01em;
       }
 
       .cls-20 {
-        letter-spacing: 0.00705em;
+        letter-spacing: 0.00695em;
       }
 
       .cls-21 {
-        letter-spacing: -0.009em;
+        letter-spacing: -0.00896em;
       }
 
       .cls-22 {
@@ -97,58 +97,62 @@
       }
 
       .cls-23 {
-        letter-spacing: -0.00997em;
+        letter-spacing: 0.03699em;
       }
 
       .cls-24 {
-        letter-spacing: 0.03697em;
+        letter-spacing: -0.00902em;
       }
 
       .cls-25 {
-        letter-spacing: -0.012em;
+        letter-spacing: -0.01201em;
       }
 
       .cls-26 {
-        letter-spacing: -0.00293em;
+        letter-spacing: -0.01396em;
       }
 
       .cls-27 {
-        letter-spacing: -0.00502em;
+        letter-spacing: -0.00299em;
       }
 
       .cls-28 {
-        letter-spacing: -0.00202em;
+        letter-spacing: -0.005em;
       }
 
       .cls-29 {
-        letter-spacing: -0.04994em;
+        letter-spacing: -0.00201em;
       }
 
       .cls-30 {
-        letter-spacing: 0.00502em;
+        letter-spacing: -0.04998em;
       }
 
       .cls-31 {
-        letter-spacing: 0.02595em;
+        letter-spacing: 0.005em;
       }
 
       .cls-32 {
-        letter-spacing: -0.01095em;
+        letter-spacing: 0.02597em;
       }
 
       .cls-33 {
-        letter-spacing: 0.003em;
+        letter-spacing: -0.01097em;
       }
 
       .cls-34 {
-        letter-spacing: -0.01102em;
+        letter-spacing: 0.00299em;
       }
 
       .cls-35 {
-        letter-spacing: -0.01702em;
+        letter-spacing: -0.017em;
       }
 
       .cls-36 {
+        letter-spacing: -0.00695em;
+      }
+
+      .cls-37 {
         opacity: 0.39;
       }
     </style>
@@ -220,7 +224,7 @@
       <path d="M381.34858,85.48649a11.74568,11.74568,0,0,0,1.81157-7.99189.53358.53358,0,0,0-.51174-.38962c-2.204-.08233-4.41519-.1084-6.62082-.12853a.51868.51868,0,0,0,0,1.03673c2.20456.07369,4.41524.14173,6.62082.1532l-.5307-.5307a10.33343,10.33343,0,0,1-1.906,7.18627c-.48839.68344.674,1.38179,1.13689.66454Z"/>
       <path d="M381.30547,71.71856c-.02442-1.25074-.04118-2.5006-.10543-3.75a.51714.51714,0,0,0-.50952-.50952,7.95389,7.95389,0,0,1-4.4385-.93487c-.5525-.34348-1.07652.59173-.50233.85938a9.06891,9.06891,0,0,0,4.94082,1.09454l-.50952-.50952c.03472,1.2517.11688,2.50005.19141,3.75.03545.59447.94488.60523.93306,0Z"/>
       <path d="M388.73041,69.05792a4.49022,4.49022,0,0,1,5.80708,1.541,4.25852,4.25852,0,0,1-2.06246,5.88724c-2.03038.86855-4.68907.29893-5.41072,2.87094-.16223.57819.77918.82309.88973.24529.36417-1.90335,4.52866-1.63111,5.9194-2.66351a5.69549,5.69549,0,0,0,2.22767-4.605c-.06183-3.91224-4.65392-5.83157-7.83116-4.06366-.51735.28787-.06167,1.04612.46047.78777Z"/>
-      <text class="cls-15" transform="translate(24 36.6709)"><tspan class="cls-16">F</tspan><tspan x="6.18848" y="0">ish </tspan><tspan class="cls-17" x="24.33203" y="0">a</tspan><tspan x="30.04395" y="0">nd </tspan><tspan class="cls-18" x="46.22754" y="0">o</tspan><tspan x="52.48535" y="0">th</tspan><tspan class="cls-19" x="63.18066" y="0">e</tspan><tspan x="68.99023" y="0">r typ</tspan><tspan class="cls-20" x="93.50293" y="0">e</tspan><tspan x="99.55176" y="0">s of sea</tspan><tspan class="cls-21" x="139.08691" y="0">f</tspan><tspan x="142.95117" y="0">ood </tspan><tspan class="cls-22" x="165.56055" y="0">a</tspan><tspan class="cls-23" x="171.17383" y="0">r</tspan><tspan x="175.68164" y="0">e </tspan><tspan x="0" y="16.7998">consid</tspan><tspan class="cls-23" x="32.62012" y="16.7998">er</tspan><tspan x="42.9375" y="16.7998">ed one of the se</tspan><tspan class="cls-23" x="126.04004" y="16.7998">v</tspan><tspan x="131.40234" y="16.7998">en lu</tspan><tspan class="cls-16" x="156.32129" y="16.7998">c</tspan><tspan class="cls-24" x="161.62793" y="16.7998">k</tspan><tspan x="168.0957" y="16.7998">y </tspan><tspan class="cls-21" x="177.26563" y="16.7998">f</tspan><tspan x="181.12988" y="16.7998">oods </tspan><tspan class="cls-25" x="0" y="33.59961">t</tspan><tspan x="4.18555" y="33.59961">o eat </tspan><tspan class="cls-22" x="33.66797" y="33.59961">d</tspan><tspan x="39.88379" y="33.59961">u</tspan><tspan class="cls-26" x="46.01563" y="33.59961">r</tspan><tspan x="50.62207" y="33.59961">ing </tspan><tspan class="cls-27" x="69.67578" y="33.59961">N</tspan><tspan class="cls-28" x="77.38965" y="33.59961">e</tspan><tspan x="83.31152" y="33.59961">w </tspan><tspan class="cls-29" x="94.81934" y="33.59961">Y</tspan><tspan x="100.74219" y="33.59961">e</tspan><tspan class="cls-22" x="106.69238" y="33.59961">a</tspan><tspan class="cls-30" x="112.30566" y="33.59961">r</tspan><tspan x="117.02344" y="33.59961">s.</tspan><tspan x="0" y="50.40039"></tspan><tspan class="cls-16" x="0" y="67.2002">F</tspan><tspan x="6.18848" y="67.2002">ish is o</tspan><tspan class="cls-31" x="42.47559" y="67.2002">f</tspan><tspan class="cls-32" x="46.8291" y="67.2002">t</tspan><tspan x="51.0293" y="67.2002">en as</tspan><tspan class="cls-33" x="77.76855" y="67.2002">s</tspan><tspan x="83.01855" y="67.2002">ocia</tspan><tspan class="cls-34" x="103.57031" y="67.2002">t</tspan><tspan x="107.76953" y="67.2002">ed with good lu</tspan><tspan class="cls-16" x="186.93848" y="67.2002">c</tspan><tspan x="192.24512" y="67.2002">k </tspan><tspan class="cls-17" x="0" y="84">a</tspan><tspan x="5.71191" y="84">nd </tspan><tspan class="cls-35" x="21.89551" y="84">a</tspan><tspan x="27.4668" y="84">b</tspan><tspan class="cls-23" x="33.83691" y="84">u</tspan><tspan x="39.8291" y="84">nd</tspan><tspan class="cls-17" x="52.49902" y="84">a</tspan><tspan x="58.21094" y="84">nt su</tspan><tspan class="cls-28" x="83.67578" y="84">r</tspan><tspan x="88.29492" y="84">plus.</tspan></text>
+      <text class="cls-15" transform="translate(24 38.67188)"><tspan class="cls-16">F</tspan><tspan x="7.51465" y="0">ish </tspan><tspan class="cls-17" x="29.54688" y="0">a</tspan><tspan x="36.48242" y="0">nd </tspan><tspan class="cls-18" x="56.13379" y="0">o</tspan><tspan x="63.7334" y="0">th</tspan><tspan class="cls-19" x="76.72168" y="0">e</tspan><tspan x="83.77637" y="0">r typ</tspan><tspan class="cls-20" x="113.54297" y="0">e</tspan><tspan x="120.88574" y="0">s of sea</tspan><tspan class="cls-21" x="168.89258" y="0">f</tspan><tspan x="173.58496" y="0">ood </tspan><tspan class="cls-22" x="0" y="20.40039">a</tspan><tspan class="cls-19" x="6.81641" y="20.40039">r</tspan><tspan x="12.29004" y="20.40039">e consid</tspan><tspan class="cls-19" x="63.3916" y="20.40039">er</tspan><tspan x="75.91992" y="20.40039">ed one of the se</tspan><tspan class="cls-19" x="176.8291" y="20.40039">v</tspan><tspan x="183.33984" y="20.40039">en </tspan><tspan x="0" y="40.7998">lu</tspan><tspan class="cls-16" x="11.16797" y="40.7998">c</tspan><tspan class="cls-23" x="17.61133" y="40.7998">k</tspan><tspan x="25.46484" y="40.7998">y </tspan><tspan class="cls-24" x="36.59961" y="40.7998">f</tspan><tspan x="41.29102" y="40.7998">oods </tspan><tspan class="cls-25" x="75.07031" y="40.7998">t</tspan><tspan x="80.15332" y="40.7998">o eat </tspan><tspan class="cls-26" x="115.9541" y="40.7998">d</tspan><tspan x="123.50293" y="40.7998">u</tspan><tspan class="cls-27" x="130.94922" y="40.7998">r</tspan><tspan x="136.54199" y="40.7998">ing </tspan><tspan class="cls-28" x="159.67871" y="40.7998">N</tspan><tspan class="cls-29" x="169.0459" y="40.7998">e</tspan><tspan x="176.23633" y="40.7998">w </tspan><tspan class="cls-30" x="0" y="61.2002">Y</tspan><tspan x="7.19141" y="61.2002">e</tspan><tspan class="cls-22" x="14.41602" y="61.2002">a</tspan><tspan class="cls-31" x="21.23242" y="61.2002">r</tspan><tspan x="26.96094" y="61.2002">s.</tspan><tspan x="0" y="81.59961"></tspan><tspan class="cls-16" x="0" y="102">F</tspan><tspan x="7.51465" y="102">ish is o</tspan><tspan class="cls-32" x="51.5791" y="102">f</tspan><tspan class="cls-33" x="56.86523" y="102">t</tspan><tspan x="61.96582" y="102">en as</tspan><tspan class="cls-34" x="94.43457" y="102">s</tspan><tspan x="100.80957" y="102">ocia</tspan><tspan class="cls-33" x="125.76563" y="102">t</tspan><tspan x="130.86621" y="102">ed with good </tspan><tspan x="0" y="122.40039">lu</tspan><tspan class="cls-16" x="11.16797" y="122.40039">c</tspan><tspan x="17.61133" y="122.40039">k </tspan><tspan class="cls-17" x="29.10254" y="122.40039">a</tspan><tspan x="36.03809" y="122.40039">nd </tspan><tspan class="cls-35" x="55.68945" y="122.40039">a</tspan><tspan x="62.45508" y="122.40039">b</tspan><tspan class="cls-19" x="70.18945" y="122.40039">u</tspan><tspan x="77.46582" y="122.40039">nd</tspan><tspan class="cls-36" x="92.85059" y="122.40039">a</tspan><tspan x="99.78711" y="122.40039">nt su</tspan><tspan class="cls-29" x="130.70898" y="122.40039">r</tspan><tspan x="136.31836" y="122.40039">plus.</tspan></text>
     </g>
   </g>
 </svg>
